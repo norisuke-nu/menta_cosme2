@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Awesome Cosmetics</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript">
+      $(function(){
+        $('a[href^=#]').click(function(){
+          var speed = 600;
+          var href= $(this).attr("href");
+          var target = $(href == "#" || href == "" ? 'html' : href);
+          var position = target.offset().top;
+        $("html, body").animate({scrollTop:position}, speed, "swing");
+      return false;
+        });
+      });
+    </script>
+
+  </head>
+  <body>
+
+    <header>
+      <div class="flex">
+        <div class="header-left">
+          <h2>LogoLOGO</h2>
+          <p>コスメです。</p>
+        </div>
+
+        <nav>
+          <ul  class="header-right">
+          <li><a href="#about">About</a></li>
+          <li><a href="#">Staff</a></li>
+          <li><a href="#item">Menu</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#access">Access</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="top-wrapper">
+      <div class="container">
+      <div class="flex">
+        <div class="mv-content">
+          <div class="mv-text">
+          <h1>Awesome<br>
+            Cosmetic</h1>
+          <p>コスメのセレクトショップのサイトです。</p>
+          </div>
+        </div>
+        <div class="top-icon">
+          <a href="#about"><img src="images/index_ico_arrow_01.png" alt="矢印"></a>
+        </div>
+      </div>
+      </div>
+    </div>
+
+
+
+    <section class="wrapper" id="about">
+      <div class="container">
+      <div class="flex-center">
+        <article class="about-content">
+          <div class="heading">
+          <h2>About</h2>
+          <h4>私たちについて<h4>
+          <h3>お店のコンセプト</h3>
+          </heading>
+          <p class="text-contents">コンセプトについての説明。コンセプトに
+            ついての説明。コンセプトについての説明。
+            コンセプトについての説明。コンセプトについての説明。
+            コンセプトについての説明。コンセプトについての
+          </p>
+        </article>
+        <figure class="about-img">
+          <img src="images/index_img_about_01.png">
+        </figure>
+      </div>
+      </div>
+
+    </section>
+
+    <section class="wrapper" id="item">
+      <div class="container">
+          <div class="heading">
+          <h2>Item</h2>
+          <h4>アイテム</h4>
+          </div>
+        <section class="items">
+        <div class="flex">
+          <article class="item">
+            <figure class="item_img">
+              <img src="images/index_img_item_fundation_01.png">
+              <figcaption>ファンデーション</figcaption>
+            </figure>
+            <h3>商品名</h3>
+            <p class="text-contents">この商品の説明。この商品の説明。この商品の説明。この商品の説明。この商品の説明。この商品の説明。</p>
+          </article>
+
+          <article class="item">
+            <figure class="item_img">
+              <img src="images/index_img_item_fundation_01.png">
+              <figcaption>リップ</figcaption>
+            </figure>
+            <h3>コスメ2コスメ2コスメ2コスメ2コスメ2</h3>
+            <p class="text-contents">この商品についてこの商品についてこの商品についてこの商品についてこの商品についてこの商品について</p>
+          </article>
+
+          <article class="item">
+            <figure class="item_img">
+              <img src="images/index_img_item_fundation_01.png">
+              <figcaption>アイシャドー</figcaption>
+            </figure>
+            <h3>コスメ3コスメ3コスメ3コス</h3>
+            <p class="text-contents">真ん中真ん中真ん中真ん中真ん中真ん中真ん中真ん中真ん中真ん中真ん中</p>
+          </article>
+          </div>
+        </section>
+      </div>
+
+    </section>
+
+    <section class="wrapper" id="price">
+      <div class="container">
+      <div class="price-bg">
+        <section class="container_price">
+          <div class="heading">
+          <h2>Price</h2>
+          <h4>料金表</h4>
+          </div>
+          <table class="price_table">
+            <tr>
+              <th>アイライナー</th>
+              <td>¥3,000</td>
+            </tr>
+            <tr>
+              <th>リップ</th>
+              <td>¥3,000</td>
+            </tr>
+            <tr>
+              <th>グロス</th>
+              <td>¥3,000</td>
+            </tr>
+            <tr>
+              <th>シャドウ</th>
+              <td>¥3,000</td>
+            </tr>
+            <tr>
+              <th class="bottom_cell">マニキュア</th>
+              <td class="bottom_cell">¥3,000</td>
+            </tr>
+          </table>
+        </section>
+      </div>
+      </div>
+    </section>
+
+    <section class="wrapper" id="blog">
+        <div class="container">
+          <div class="heading">
+          <h2>Blog</h2>
+          <h4>ブログ</h4>
+          </div>
+
+          <section class="articles">
+          <div class="flex">
+            <article class="article">
+              <dl>
+              <figure class="article_img">
+                <img src="images/index_img_blog_01.png">
+              </figure>
+              <dt><time datetime="2019-12-03T20:00:00">2019/12/3</time></dt>
+              <dd class="text-contents">1月の営業日ご案内。</dd>
+              </dl>
+            </article>
+
+            <article class="article">
+              <dl>
+              <figure class="article_img">
+                <img src="images/index_img_blog_02.png">
+              </figure>
+              <dt><time datetime="2019-11-02T20:00:00">2019/11/2</time></dt>
+              <dd class="text-contents">12月の営業日ご案内。</dd>
+              </dl>
+            </article>
+
+            <article class="article-right">
+              <dl>
+              <figure class="article_img">
+                <img src="images/index_img_blog_03.png">
+              </figure>
+              <dt><time datetime="2019-11-02T20:00:00">2019/11/2</time></dt>
+              <dd class="text-contents">メイク始めました。</dd>
+              </dl>
+            </article>
+          </section>
+          </div>
+        </div>
+
+    </section>
+
+    <section class="wrapper" id="access">
+      <div class="container">
+        <div class="heading">
+        <h2>Access</h2>
+        <h4>アクセス</h4>
+        </div>
+
+      <section class="access-contents">
+      <div class="flex">
+        <article class="access-content">
+        <dl>
+        <dt>ADRESS</dt>
+        <dd>大阪北区芝田一丁目</dd>
+        <dt>TELL</dt>
+        <dd>000-0000-0000</dd>
+        <dt>ON TIME</dt>
+        <dd>平日</dd>
+        <dt>OFF TIME</dt>
+        <dd>土曜日曜祝日<dd>
+        </dl>
+
+        </article>
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3279.9489553867284!2d135.49557386517776!3d34.70646739041724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e691c5c21a61%3A0x426587edd82ea9dc!2z44CSNTMwLTAwMTIg5aSn6Ziq5bqc5aSn6Ziq5biC5YyX5Yy66Iqd55Sw77yR5LiB55uu!5e0!3m2!1sja!2sjp!4v1594605056334!5m2!1sja!2sjp"
+         width="664" height="421" frameborder="1" style="border:1;" allowfullscreen="" aria-hidden="false" tabindex="0">
+        </iframe>
+      </div>
+      </section>
+    </section>
+
+      <article class="access-detail">
+        <h3>道順の説明</h3>
+        <p>①行き方の説明行き方の説明行き方の説明行き方の説明行き方の説明行き方の説明行き方の説明行き方の説明行き方の説明行き方の説明行き方の説明行き方の説明行き方の説明行き方の説明行き方の説明行き方の説明</p>
+        <p>②行き方の説明行き方の説明行き方の説明行き方の説明行き方の説明行き方の説明行き方の説明行き方の説明行き方の説明行き方の説明行き方の説明行き方の説明行き方の説明行き方の説明行き方の説明行き方の説明</p>
+        <p>③行き方の説明行き方の説明行き方の説明行き方の説明行き方の説明行き方の説明行き方の説明行　　き方の説明行き方の説明行き方の説明行き方の説明行き方の説明行き方の説明行き方の説明行き方の説明行き方の説明</p>
+      </article>
+
+      </div>
+    </div>
+
+
+    <footer>
+        <p>LOGOLOGo</p>
+    </footer>
+
+  </body>
+</html>
