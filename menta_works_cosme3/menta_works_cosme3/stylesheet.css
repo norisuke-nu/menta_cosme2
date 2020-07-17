@@ -1,0 +1,337 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family:"Montserrat", "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", "メイリオ", sans-serif;}
+
+/*共通*/
+a {
+  text-decoration: none;
+}
+
+.heading h2{
+  font-size: 48px;
+  font-weight: bold;
+  margin:0 0 40px 0;
+  display: inline-block;
+  position: relative;
+}
+.heading h2:before {
+  content: '';
+  position: absolute;
+  left: 0px;
+  bottom: -20px;/*線の上下位置*/
+  display: inline-block;
+  width: 80px;/*線の長さ*/
+  height: 5px;/*線の太さ*/
+  -webkit-transform: translateX(0%);
+  transform: translateX(0%);/*位置調整*/
+  background-color: black;/*線の色*/
+}
+
+.heading h3{
+  font-size: 16px;
+  font-weight: bold;
+  margin:0 0 40px 0;
+}
+
+.heading h4{
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.tit{
+  font-size: 24px;
+  font-weight: bold;
+  margin:10px 0;
+}
+
+.text-contents{
+  font-size: 16px;
+  line-height: 1.8;
+  margin:14px 0;
+}
+
+.container {
+  width: 1004px;
+  margin: 0 auto;
+}
+
+.wrapper{
+  margin-bottom: 160px;
+}
+
+.flex{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.flex-center{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items:center;
+}
+
+figure{
+  margin:0;
+}
+
+/*ヘッダー*/
+
+header {
+  height: 87px;
+  width: 100%;
+  position :fixed;
+  top: 0;
+  z-index: 10;
+}
+
+.header-left {
+  padding:35px 0 0 40px;
+}
+
+.header-left h2{
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom:5px;
+}
+
+.header-left p {
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.header-right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.header-right a{
+  color:black;
+  line-height: 20px;
+  margin:15px 65px 0px 0px;
+  padding:20px 5px 0 0;
+  width:65px;
+  display: block;
+  transition: all 0.1s;
+}
+
+.header-right li{
+  list-style: none;
+}
+
+.header-right a:hover {
+  border-bottom: 10px solid black;
+}
+
+/*トップ*/
+
+.top-wrapper {
+  height:754px;
+  margin-bottom:160px;
+  background-image: url(images/index_mv_01.png);
+  background-size: cover;
+}
+
+.mv-content{
+  width:1004px;
+  height:656px;
+}
+
+.mv-text{
+  position: relative;
+  top: 50%;
+  left: 0%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+}
+
+.mv-text h1{
+  line-height: 1.2;
+}
+
+.mv-text p{
+  margin:24px 0;
+}
+
+.top-icon {
+  width: 1004px;
+  height:98px;
+}
+
+.top-icon img{
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+
+.top-wrapper h1 {
+  color: black;
+  font-size: 64px;
+  font-weight: bold;
+  margin:0;
+}
+
+.top-wrapper p {
+  color: white;
+  font-size: 24px;
+}
+
+
+/* about*/
+.about-content{
+  width:448px;
+  background-color: #F0F0F0;
+  border: 1px solid #707070;
+  padding: 77px 57px;
+}
+
+
+/* item*/
+.item {
+  width:324px;
+}
+
+.item_img figcaption{
+  margin:20px 0 30px 0;
+}
+
+
+
+/* price*/
+.price-bg{
+  height:1000px;
+  background-image: url("images/index_img_price_01.png");
+  background-repeat: no-repeat;
+  background-position:right 0% top 100px;
+
+}
+
+.container_price{
+  width: 494px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 5px solid #A38787;
+  padding:55px 84px;
+  text-align: center;
+}
+
+.container_price h2:before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -8px;/*線の上下位置*/
+  display: inline-block;
+  width: 80px;/*線の長さ*/
+  height: 5px;/*線の太さ*/
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);/*位置調整*/
+  background-color: black;/*線の色*/
+}
+
+.price_table{
+  width: 324px;
+  margin:70px 0 40px 0;
+
+}
+th,td{
+  width:100%;
+  padding:15px 0;
+  border-bottom: 1px dotted #707070;
+}
+
+th{
+  text-align: left;
+}
+
+td{
+  text-align: right;
+}
+
+.bottom_cell{
+  border-bottom: none;
+}
+
+/* blog*/
+.flex li{
+  list-style: none;
+}
+
+.articles{
+  margin-top:60px;
+}
+
+.article {
+  width:324px;
+}
+
+.article_img {
+  margin-bottom:30px;
+}
+
+.article time{
+  font-size:16px;
+  font-weight: bold;
+}
+
+/* access*/
+.access-contents{
+  margin-top:60px;
+}
+
+.access-content{
+  width:300px;
+}
+
+.access-content dt{
+  margin:0 0 20px 0;
+  font-size: 24px;
+  font-weight: bold;
+
+}
+
+.access-content dd{
+  margin:0 0 20px 0;
+}
+
+.access-detail{
+  width:740px;
+  margin-top:100px;
+  margin: 60px auto;
+
+}
+
+.access-detail li{
+  list-style-type: none;
+}
+
+.address{
+  margin-bottom: 30px;
+  line-height: normal;
+}
+
+/*footer*/
+
+footer {
+  background-color: #262626;
+  height: 261px;
+  margin:0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer p{
+  color: white;
+  font-size: 80px;
+  font-weight:bold;
+}
