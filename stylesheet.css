@@ -146,7 +146,7 @@ header {
 .mv-text{
   position: relative;
   top: 50%;
-  left: 0%;
+  left: 5%;
   transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
@@ -219,7 +219,7 @@ header {
 
 .container_price{
   width: 494px;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.85);
   border: 5px solid #A38787;
   padding:55px 84px;
   text-align: center;
@@ -241,8 +241,8 @@ header {
 .price_table{
   width: 324px;
   margin:70px 0 40px 0;
-
 }
+
 th,td{
   width:100%;
   padding:15px 0;
@@ -293,14 +293,14 @@ td{
 }
 
 .access-content dt{
-  margin:0 0 20px 0;
+  margin-bottom:20px;
   font-size: 24px;
   font-weight: bold;
 
 }
 
 .access-content dd{
-  margin:0 0 20px 0;
+  margin-bottom:20px;
 }
 
 .access-detail{
@@ -319,6 +319,11 @@ td{
   line-height: normal;
 }
 
+iframe{
+  width:664px;
+  height:421px;
+}
+
 /*footer*/
 
 footer {
@@ -334,4 +339,8 @@ footer p{
   color: white;
   font-size: 80px;
   font-weight:bold;
+}
+
+.responsive-menu{
+  display: none;
 }

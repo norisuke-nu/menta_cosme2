@@ -1,0 +1,287 @@
+@media (max-width:670px) {
+
+  /*共通*/
+  .heading h2{
+    font-size: 38px;
+  }
+
+  .heading h3{
+    font-size: 12px;
+  }
+
+  .heading h4{
+    font-size: 20px;
+  }
+
+  .tit{
+    font-size: 24px;
+  }
+
+  .text-contents{
+    font-size: 12px;
+  }
+
+  .container {
+    width: auto;
+    margin: 0 auto;
+    padding:0 15px;
+  }
+
+  .wrapper{
+    margin-bottom: 100px;
+  }
+
+
+
+
+/* header */
+.header-left {
+  padding:35px 0 0 15px;
+}
+
+.header-right {
+  display: block;
+}
+
+.header-right a{
+  line-height: 10px;
+  margin:15px 0px;
+  padding:10px 5px 0 0;
+}
+
+
+.header-right a:hover {
+  border-bottom:none;
+}
+
+#header nav {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    width: 300px;
+    height: 100%;
+    padding-top: 50px;
+    background-color: rgba(255, 255, 255, 0.95);
+    font-size: 24px;
+    box-sizing: border-box;
+    z-index: 2
+}
+#header nav ul li {
+    display:block;
+    padding: 10px 28px
+}
+
+#header nav ul li a {
+    text-decoration: none;
+}
+
+#header .btn{
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  width: 80px;
+  height: 80px;
+  background-color: white;
+  z-index: 4;
+}
+
+#header .btn-gnavi {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 35px;
+    height: 27px;
+    z-index: 3;
+    box-sizing: border-box;
+    cursor: pointer;
+    -webkit-transition: all 400ms;
+    transition: all 400ms
+}
+
+#header .btn-gnavi span {
+    position: absolute;
+    width: 35px;
+    height: 3px;
+    background: black;
+    -webkit-transition: all 400ms;
+    transition: all 400ms;
+}
+
+#header .btn-gnavi span:nth-child(1) {
+    top: 0;
+}
+
+#header .btn-gnavi span:nth-child(2) {
+    top: 13px;
+}
+
+#header .btn-gnavi span:nth-child(3) {
+    top: 26px;
+}
+
+#header .contents section p {
+    position: absolute;
+    top: 50%;
+    width: 30%;
+    line-height: 1.4;
+    font-size: 20px;
+    color: #fff;
+    text-shadow: 0 0 6px #666
+}
+
+
+#header .btn-gnavi.open{
+  transform: rotate(-45deg);
+}
+
+#header .btn-gnavi.open span:nth-child(1){
+  transform: rotate(0deg) translateY(13px);
+}
+
+#header .btn-gnavi.open span:nth-child(2){
+  opacity: 0;
+}
+
+#header .btn-gnavi.open span:nth-child(3){
+ transform: rotate(-90deg) translateX(13px);
+}
+
+
+.top-icon {
+    width: auto;
+  }
+
+
+/*トップ*/
+.top-wrapper {
+  height:673px;
+  margin-bottom:100px;
+  background-image: url(images/index_mv_01.png);
+  background-color:rgba(255,255,255,0.3);
+  background-blend-mode:lighten;
+  background-size: cover;
+  background-position: right 35% bottom 5%;
+
+}
+
+.mv-content{
+  width:auto;
+  height: 575px;
+}
+
+.mv-text h1{
+  font-size: 40px;
+}
+
+.mv-text p{
+  font-size: 16px;
+}
+
+
+/*about*/
+
+  .about-content{
+    width:auto;
+    background-color:white;
+    border: none;
+    padding:0;
+  }
+
+  .about-img img{
+    width:100%;
+  }
+
+  /* item*/
+
+  /* price*/
+  .price-bg{
+    height:700px;
+    margin: 0 calc(50% - 50vw);
+    padding: 4px calc(50vw - 50% + 8px);
+    width: 100vw;
+    background-image: url("images/index_img_price_01.png");
+    background-size: 130%;
+    background-repeat: no-repeat;
+    background-position:center;
+
+  }
+
+  .container_price{
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.85);
+    border: 5px solid #A38787;
+    padding:65px 30px;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
+
+  .price_table{
+    width: auto;
+  }
+
+  th,td{
+    font-size: 12px;
+  }
+
+
+  /* blog*/
+  .article {
+    width:169px;
+  }
+
+  .article_img {
+    margin-bottom:8px;
+  }
+
+  .article_img img{
+    width:100%;
+  }
+
+  .article time{
+    font-size:12px;
+  }
+
+
+    /* access*/
+  .access-content{
+    width:auto;
+  }
+
+  .access-detail{
+    width:auto;
+  }
+
+  .access-content dt{
+    font-size: 18px;
+    margin-bottom:10px;
+  }
+
+  .access-content dd{
+    font-size: 12px;
+
+  }
+
+  iframe{
+    width:100%;
+    height:218px;
+  }
+
+  .access-detail li{
+    font-size: 12px;
+  }
+
+/*footer*/
+
+footer {
+  height: 182px;
+}
+
+
+footer p{
+  font-size: 40px;
+}

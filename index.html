@@ -2,9 +2,11 @@
   <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
     <title>Awesome Cosmetics</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="responsive.css" media="screen and (max-width:670px)">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="index.js"></script>
@@ -18,7 +20,16 @@
           <p>コスメです。</p>
         </div>
 
-        <nav>
+      <div id="header">
+        <div class="btn">
+      <p class="btn-gnavi">
+      <span></span>
+      <span></span>
+      <span></span>
+      </p>
+        </div>
+
+        <nav id="global-navi">
           <ul  class="header-right">
           <li><a href="#about">About</a></li>
           <li><a href="#">Staff</a></li>
@@ -213,7 +224,7 @@
         </article>
 
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3279.9489553867284!2d135.49557386517776!3d34.70646739041724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e691c5c21a61%3A0x426587edd82ea9dc!2z44CSNTMwLTAwMTIg5aSn6Ziq5bqc5aSn6Ziq5biC5YyX5Yy66Iqd55Sw77yR5LiB55uu!5e0!3m2!1sja!2sjp!4v1594605056334!5m2!1sja!2sjp"
-         width="664" height="421" allowfullscreen="" aria-hidden="false" tabindex="0">
+         allowfullscreen="" aria-hidden="false" tabindex="0">
         </iframe>
       </div>
       </section>
@@ -234,6 +245,7 @@
     <footer>
         <p>LOGOLOGo</p>
     </footer>
+
 
   </body>
 </html>
